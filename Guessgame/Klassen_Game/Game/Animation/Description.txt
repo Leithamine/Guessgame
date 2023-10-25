@@ -1,0 +1,376 @@
+﻿---
+0:
+Welcome to the fascinating world of special numbers!
+From Abundant and Bell numbers to Triangle Numbers:
+I will not only explain the math behind them, but also provide practical 
+examples.
+If you wish, you can skip the explanations at any time and return directly 
+to the game interface.
+
+Would you like an overview? Here are some of the types of numbers we will explore together:
+	- Abundant Numbers	- Automorphic Numbers 
+	- Bell Numbers		- Composite Numbers    
+	- Deficient Numbers	- Factorial Numbers
+	- Fibonacci Numbers	- Happy Numbers       
+	- Harshed Numbers		- Narcissistic Numbers  
+	- Perfect Numbers		- Prime Numbers
+	- Sexy Prime Numbers	- Smith Numbers       
+	- Square Numbers		- Triangle Numbers
+
+Join me on a journey through the wonderful world of mathematics!"
+---
+1:
+Abundant Numbers:
+
+Description:
+Abundant numbers (also known as excessive numbers) are numbers where 
+the sum of their proper divisors is greater than the number itself.
+
+Mathematics:
+For a given number n, let σ (n) be the sum of its proper divisors.
+If σ (n) > n, then n is an abundant number.
+
+Example:
+Consider the number 12. Its proper divisors are 1, 2, 3, 4, and 6.
+σ (12) = 1 + 2 + 3 + 4 + 6 = 16
+Since σ (12) = 16 > 12, 12 is an abundant number.
+---
+2:
+Automorphic Numbers:
+
+Description:
+Automorphic numbers are numbers whose square ends with the same digits as the number itself.
+
+Mathematics:
+For a given number n, it is automorphic if the last digits of n^2 are the same as n.
+
+Example:
+The number 5 is automorphic, because 5^2 = 25, and the square ends with 5.
+The number 76 is also automorphic, as 76^2 = 5776, and the square ends with 76.
+---
+3:
+Bell Numbers:
+
+Description:
+Bell numbers represent the number of different ways a set of n elements can be partitioned. 
+These numbers are named after the mathematician Eric Temple Bell.
+
+Mathematics:
+To generate a Bell number, one uses the Bell Triangle.
+The key rules for the triangle are:
+1. The first number in row i is the last number in row i-1.
+2. Each subsequent number in row i is the sum of the previous number in the same row and the number directly above it.
+
+The Bell number for a given number n is the last entry in the n-th row of this triangle.
+
+Example:
+Consider the set {1, 2, 3}. The different partitioning possibilities are:
+1. {1, 2, 3}
+2. {1}, {2, 3}
+3. {1, 2}, {3}
+4. {1, 3}, {2}
+5. {1}, {2}, {3}
+
+So, there are 5 different ways to partition this set.
+This means that the Bell number for n = 3 is 5.
+---
+4:
+Composite Numbers:
+
+Description:
+Composite numbers are numbers that have more than two positive divisors: 
+1, themselves, and at least one additional divisor.
+They are the opposite of prime numbers.
+
+Mathematics:
+An integer n > 1 is composite if it is not prime.
+This means there exist positive integers a and b (both greater than 1),
+such that n = a * b.
+So, a composite number has at least one pair of divisors,
+that is not 1 and the number itself.
+
+Example:
+Consider the number 4. It has the divisors 1, 2, and 4.
+Since 2 is a divisor of 4 and 2 is neither 1 nor 4, 4 is a composite number.
+Another example is 9, which has the divisors 1, 3, and 9.
+Since 3 is a divisor of 9 and 3 is neither 1 nor 9,
+9 is also a composite number.
+---
+5:
+Deficient Numbers:
+
+Description:
+Deficient numbers are numbers where the sum of their proper divisors 
+(all positive divisors other than themselves) is less than the number itself.
+
+Mathematics:
+Let s(n) be the sum of the proper divisors of a number n.
+A number n is deficient if s(n) < n.
+
+Example:
+Consider the number 10. Its proper divisors are 1, 2, and 5.
+The sum of these divisors is 1 + 2 + 5 = 8.
+Since 8 is less than 10, 10 is a deficient number.
+Another example is the number 3. Its only proper divisor is 1,
+and since 1 is less than 3, 3 is also a deficient number.
+---
+6:
+Factorial Numbers:
+
+Description:
+A factorial number is the product of all positive integers
+up to a given number n.
+It is denoted as n! and is called n factorial.
+
+Mathematics:
+The factorial of a number n is denoted as n! and is the product of all positive
+integers from 1 to n. Mathematically expressed:
+n! = n * (n-1) * (n-2) * .... * 3 * 2 * 1
+
+By convention, we define 0! = 1.
+
+Example:
+Consider the number 4. Its factorial is 4! = 4 * 3 * 2 * 1 = 24.
+Another example is the number 5.
+Its factorial is 5! = 5 * 4 * 3 * 2 * 1 = 120.
+This means that 24 and 120 are factorial numbers.
+---
+7:
+Fibonacci Numbers:
+
+Description:
+Fibonacci numbers are a sequence where each number is the sum of the two preceding ones. The sequence starts with 0 and 1.
+
+Mathematics:
+The Fibonacci sequence is defined as follows:
+F(0) = 0, F(1) = 1 
+F(n) = F(n-1) + F(n-2)
+
+für alle n > 1.
+
+Example:
+The first ten numbers in the Fibonacci sequence are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+If we consider the number 5 in this sequence, 
+it is derived from the sum of the two preceding numbers: 2 and 3.
+The same applies to the number 21, which is the sum of 8 and 13.
+---
+8:
+Happy Numbers:
+
+Description:
+Happy numbers are numbers that possess a certain property:
+If you repeatedly sum the squares of their digits,
+until you arrive at a single number, you eventually reach the number 1.
+
+Mathematics:
+To determine if a number n is happy:
+1. Square each digit of the number.
+2. Sum these squares to obtain a new number.
+3. Repeat steps 1 and 2 with the new number.
+
+If you eventually reach the number 1, then n is a happy number.
+If you enter into an endless loop that doesn't end at 1,
+e.g., the loop 4, 16, 37, 58, 89, 145, 42, 20, 4,
+then the number is not happy.
+
+Example:
+Consider the number 19:
+1^2 + 9^2 = 1 + 81 = 82
+8^2 + 2^2 = 64 + 4 = 68 
+6^2 + 8^2 = 36 + 64 = 100 
+ 1^2 + 0^2 + 0^2 = 1 
+
+Since we eventually reach the number 1, 19 is a happy number.
+---
+9:
+Harshad Numbers:
+
+Description:
+A Harshad number or Niven number is a positive integer that is divisible by the sum of its digits.
+
+Mathematics:
+Let n be a positive integer and s(n) be the sum of the digits of n.
+n is a Harshad number if n is divisible by s(n) with no remainder.
+
+Example:
+Consider the number 18:
+The sum of its digits is 1 + 8 = 9.
+Since 18 is divisible by 9 with no remainder 18 / 9 = 2, 18 is a Harshad number.
+Another example is the number 20.
+The sum of its digits is 2 + 0 = 2. Since 20 is divisible by 2 with no remainder
+20 / 2 = 10, 20 is also a Harshad number.
+---
+10:
+Narcissistic Numbers:
+
+Description:
+A narcissistic number is a number that is equal to the sum of its own digits
+, each raised to the power of the number of digits in the number.
+
+Mathematics:
+An n-digit number is narcissistic if the sum of its digits, 
+each raised to the n-th power, is equal to the original number.
+
+Mathematically expressed, let n be a d-digit number and a_i its digits.
+n is narcissistic if:
+
+n = (a_1)^d + (a_2)^d + ...+ (a_d)^d
+
+Example:
+Consider the number 153:
+It is a 3-digit number. The sum of its digits, each raised to the third power, is:
+	1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+Since this sum is equal to the original number 153, 153 is a narcissistic number.
+Another example is the number 9474. It is a 4-digit number, and:
+	9^4 + 4^4 + 7^4 + 4^4 = 6561 + 256 + 2401 + 256 = 9474
+Since this sum is equal to 9474, 9474 is also a narcissistic number.
+---
+11:
+Perfect Numbers:
+
+Description:
+A perfect number is a positive integer that is equal to the sum of its proper divisors
+i.e., all positive divisors other than itself.
+
+Mathematics:
+Let n be a positive integer. If the sum of the proper divisors of n including 1 but not n itself equals n,
+then n is a perfect number.
+
+Example:
+Consider the number 28:
+Its proper divisors are 1, 2, 4, 7, and 14.
+The sum of these divisors is 1 + 2 + 4 + 7 + 14 = 28.
+
+Since the sum of its proper divisors equals exactly 28, 28 is a perfect number.
+Another well-known example of a perfect number is 6,
+since the divisors of 6 other than 6 itself are 1, 2, and 3, and their sum 1 + 2 + 3 = 6.
+---
+12:
+Prime Numbers:
+
+Description:
+A prime number is a natural number greater than 1, 
+which has no positive divisors other than 1 and itself.
+
+Mathematics:
+A number n is a prime number if it is divisible only by 1 and n with no remainder.
+This means that n has no proper divisors other than 1.
+
+Example:
+Consider the number 5:
+The only numbers that divide 5 without a remainder are 1 and 5 itself.
+
+This means that 5 is a prime number.
+It's important to note that 2 is the only even prime number.
+All other even numbers can be divided by 2 and are therefore not prime numbers.
+---
+13:
+Sexy Prime Numbers:
+
+Description:
+A pair of prime numbers is referred to as "Sexy Primes" when they are exactly six units apart.
+The term "sexy" comes from the Latin word "sex," which means six.
+
+Mathematics:
+If p and p+6 are both prime numbers, then p and p+6 form a "Sexy Prime" pair.
+
+Example:
+Consider the numbers 5 and 11:
+Both are prime numbers and are exactly 6 units apart.
+
+This means that (5, 11) is a "Sexy Prime" pair.
+Another example is the pair (7, 13).
+Both numbers are prime numbers and are 6 units apart, making them another "Sexy Prime" pair.
+---
+14:
+Smith Numbers:
+
+Description:
+A Smith number is a composite number (i.e., not a prime number),
+for which the sum of its digits is equal to the sum of the digits of its prime factors.
+Here, the prime factors are counted as numbers, not as products.
+
+Mathematics:
+A number n is a Smith number if:
+1. n is composite (not prime).
+2. The sum of the digits of n is equal to the sum of the digits of all its prime factors.
+
+Example:
+Consider the number 22:
+The prime factors of 22 are 2 and 11.  
+Sum of the digits of 22: 2 + 2 = 4.  
+Sum of the digits of the prime factors: 2 + (1 + 1) = 4.  
+
+Since both sums are identical and 22 is composite, 22 is a Smith number.
+---
+15:
+Square Numbers:
+
+Description:
+A square number is the result of multiplying an integer by itself.
+This means that a number is square if it represents the square area of a square with an integer side length.
+
+Mathematics:
+A number n is a square number if there exists an integer x such that n = x^2.
+
+Example:
+Consider the number 121:
+Since 11 * 11 = 121, 121 is a square number.
+---
+16:
+Triangle Numbers:
+
+Description:
+A triangular number is a number that forms the shape of an equilateral triangle when arranged as points or objects.
+It represents the number of points in a triangle with a given number of rows.
+
+Mathematics:
+The n_th triangular number is the sum of the first n natural numbers.
+The formula for finding the n_th triangular number is:
+T_n = n(n+1) /2
+
+Example:
+Consider n = 4:
+The triangular number is T_4 = 4(4+1) / 2 => 4 * 5 / 2 = 10. 
+
+If you arrange 10 points in the shape of an equilateral triangle, with 1 point in the first row, 2 in the second, 3 in the third, and 4 in the fourth, you get a total of 10 points.
+---
+17:
+Twin Prime Numbers:
+
+---
+18:
+Ugly Numbers:
+
+---
+19:
+Woodall Numbers:
+
+---
+20:
+Zuckerman Numbers:
+
+---
+21:
+Zumkeller Numbers:
+
+---
+22:
+Pronic Numbers:
+
+---
+23:
+Pell Numbers:
+
+---
+24:
+Catalan Numbers:
+
+---
+25:
+Disarium Numbers:
+
+---
+26:
+Sphenic Numbers:
+

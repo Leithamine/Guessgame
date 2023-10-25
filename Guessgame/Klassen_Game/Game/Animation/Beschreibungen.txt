@@ -1,0 +1,390 @@
+﻿---
+0:
+Willkommen zur faszinierenden Welt besonderer Zahlen!
+Von Abundant und Bell Zahlen bis hin zu Triangle Numbers:
+Ich werde dir nicht nur die Mathematik dahinter erklären, sondern auch praktische 
+Beispiele liefern.
+Falls du möchtest, kannst du die Erklärungen jederzeit überspringen und direkt 
+zum Spielinterface zurückkehren. 
+
+Möchtest du einen Überblick? Hier sind einige der Zahlenarten, die wir gemeinsam
+erkunden werden:
+	- Abundant Numbers	- Automorphic Numbers 
+	- Bell Numbers		- Composite Numbers    
+	- Deficient Numbers	- Factorial Numbers
+	- Fibonacci Numbers	- Happy Numbers       
+	- Harshed Numbers		- Narcissistic Numbers  
+	- Perfect Numbers		- Prime Numbers
+	- Sexy Prime Numbers	- Smith Numbers       
+	- Square Numbers		- Triangle Numbers
+
+Begib dich mit mir auf eine Reise durch die wundervolle Welt der Mathematik!"
+---
+1:
+Abundant Numbers:
+
+Beschreibung:
+Überschusszahlen (auch als reiche Zahlen bekannt) sind Zahlen, bei denen
+die Summe ihrer echten Teiler größer ist als die Zahl selbst.
+
+Mathematik:
+Für eine gegebene Zahl n sei σ (n) die Summe ihrer echten Teiler.
+Wenn σ(n) > n, dann ist n eine Überschusszahl.
+
+Beispiel:
+Betrachten wir die Zahl 12. Ihre echten Teiler sind 1, 2, 3, 4 und 6.
+σ(12) = 1 + 2 + 3 + 4 + 6 = 16
+Da σ(12) = 16 > 12, ist 12 eine Überschusszahl.
+---
+2:
+automorphic Numbers:
+
+Beschreibung: 
+Automorphe Zahlen sind Zahlen, deren Quadrat mit denselben Ziffern endet wie die Zahl 
+selbst.
+
+Mathematik: 
+Für eine gegebene Zahl n ist sie automorph, wenn die letzten Ziffern von n^2 gleich n sind.
+
+Beispiel: 
+Die Zahl 5 ist automorph, denn 5^2=25, und das Quadrat endet auf 5. 
+Zahl 76, da 76^2=5776 und das Quadrat auf 76 endet.
+---
+3:
+Bell Numbers:
+
+Beschreibung:
+Bell-Zahlen repräsentieren die Anzahl der verschiedenen Möglichkeiten, wie eine Menge 
+von(n) Elementen partitioniert werden kann.
+Diese Zahlen sind nach dem Mathematiker Eric Temple Bell benannt.
+
+Mathematik:
+Um eine Bell-Zahl zu generieren, verwendet man das Bell-Dreieck. 
+Die Schlüsselregeln für das Dreieck sind:
+1. Die erste Zahl in der Zeile  i  ist die letzte Zahl in der Zeile  i-1.
+2. Jede nachfolgende Zahl in der Zeile  i  ist die Summe der vorherigen 
+Zahl in derselben Zeile und der Zahl direkt darüber.
+
+Die Bell-Zahl für eine gegebene Zahl n ist der letzte Eintrag in der n -ten Zeile 
+dieses Dreiecks.
+
+Beispiel:  
+Betrachten Sie die Menge {1, 2, 3}. Die verschiedenen Partitionierungsmöglichkeiten sind:
+1. {1, 2, 3}
+2. {1}, {2, 3}
+3. {1, 2}, {3}
+4. {1, 3}, {2}
+5. {1}, {2}, {3}
+
+Es gibt also 5 verschiedene Möglichkeiten, diese Menge zu partitionieren.
+Dies bedeutet, dass die Bell-Zahl für ( n = 3) gleich 5 ist.
+---
+4:
+Composite Numbers:
+
+Beschreibung:
+Zusammengesetzte Zahlen sind Zahlen, die mehr als zwei positive Teiler haben:
+1, sich selbst und mindestens einen zusätzlichen Teiler.
+Sie sind das Gegenteil von Primzahlen.
+
+Mathematik:
+Eine ganze Zahl ( n > 1 ) ist zusammengesetzt, wenn sie nicht prim ist.
+Das bedeutet, es gibt positive ganze Zahlen ( a ) und ( b ) (beide größer als 1),
+sodass ( n = a * b ).
+Eine zusammengesetzte Zahl hat also mindestens ein Teilerpaar,
+das nicht 1 und die Zahl selbst ist.
+
+Beispiel:
+Betrachten Sie die Zahl 4. Sie hat die Teiler 1, 2 und 4.
+Da 2 ein Teiler von 4 ist und 2 nicht 1 oder 4 ist, ist 4 eine zusammengesetzte Zahl.
+Ein weiteres Beispiel ist 9, das die Teiler 1, 3 und 9 hat.
+Da 3 ein Teiler von 9 ist und 3 nicht 1 oder 9 ist,
+ist auch 9 eine zusammengesetzte Zahl.
+---
+5:
+Deficient Numbers:
+
+Beschreibung:
+Mangelhafte Zahlen sind Zahlen, bei denen die Summe ihrer echten Teiler 
+(also alle positiven Teiler außer sich selbst) kleiner ist als die Zahl selbst.
+
+Mathematik:
+Sei s(n) die Summe der echten Teiler einer Zahl n. 
+Eine Zahl n ist dann mangelhaft, wenn s(n) < n.
+
+Beispiel: 
+Betrachten Sie die Zahl 10. Ihre echten Teiler sind 1, 2 und 5.
+Die Summe dieser Teiler ist 1 + 2 + 5 = 8.
+Da 8 kleiner ist als 10, ist 10 eine mangelhafte Zahl. 
+Ein weiteres Beispiel ist die Zahl 3. Ihre einzigen echten Teiler sind 1,
+und da 1 kleiner ist als 3, ist auch 3 eine mangelhafte Zahl.
+---
+6:
+Factorial Numbers:
+
+Beschreibung:
+Eine Fakultätszahl ist das Produkt aller positiven Ganzzahlen
+bis zu einer gegebenen Zahl n. 
+Es wird als n! bezeichnet und "n Fakultät" genannt.
+
+Mathematik:  
+Die Fakultät einer Zahl n wird als n!  bezeichnet und ist das Produkt aller positiven
+Ganzzahlen von 1 bis n. Mathematisch ausgedrückt:
+ n! = n * (n-1) * (n-2) *... * 3 * 2 * 1 
+
+Für n = 0 definieren wir 0! = 1  durch Konvention.
+
+Beispiel:  
+Betrachten Sie die Zahl 4. Ihre Fakultät ist 4! = 4 * 3 * 2 * 1 = 24.
+Ein weiteres Beispiel ist die Zahl 5.
+Ihre Fakultät ist 5! = 5 * 4 * 3 * 2 * 1 = 120 . 
+Das bedeutet, 24 und 120 sind Fakultätszahlen.
+---
+7:
+Fibonacci Numbers:
+
+Beschreibung:
+Fibonacci-Zahlen sind eine Zahlenfolge, bei der jede Zahl die Summe der
+beiden vorhergehenden Zahlen ist. Die Sequenz beginnt mit 0 und 1.
+
+Mathematik:  
+Die Fibonacci-Sequenz wird wie folgt definiert:
+F(0) = 0, F(1) = 1 
+F(n) = F(n-1) + F(n-2)
+
+für alle n > 1.
+
+Beispiel: 
+Die ersten zehn Zahlen der Fibonacci-Sequenz sind: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+Betrachtet man beispielsweise die Zahl 5 in dieser Reihenfolge, 
+so ergibt sie sich aus der Summe der beiden vorhergehenden Zahlen: 2 und 3.
+Das gleiche gilt für die Zahl 21, die sich aus der Summe von 8 und 13 ergibt.
+---
+8:
+Happy Numbers:
+
+Beschreibung:
+Glückliche Zahlen sind Zahlen, die eine bestimmte Eigenschaft haben:
+Wenn man die Quadrate ihrer Ziffern wiederholt summiert, 
+bis man eine einzelne Zahl erreicht, ergibt sich schließlich die Zahl 1.
+
+Mathematik:
+Um zu bestimmen, ob eine Zahl n glücklich ist:
+1. Quadriere jede Ziffer der Zahl.
+2. Addiere diese Quadrate, um eine neue Zahl zu erhalten.
+3. Wiederhole die Schritte 1 und 2 mit der neuen Zahl.
+
+Wenn man schließlich die Zahl 1 erreicht, ist n eine glückliche Zahl.
+Wenn man in eine Endlosschleife gerät, die nicht bei 1 endet
+Z.B. die Schleife 4, 16, 37, 58, 89, 145, 42, 20, 4,
+dann ist die Zahl nicht glücklich.
+
+Beispiel:
+Betrachten Sie die Zahl 19:
+1^2 + 9^2 = 1 + 81 = 82
+8^2 + 2^2 = 64 + 4 = 68 
+6^2 + 8^2 = 36 + 64 = 100 
+1^2 + 0^2 + 0^2 = 1 
+
+Da wir schließlich die Zahl 1 erreichen, ist 19 eine glückliche Zahl.
+---
+9:
+Harshed Numbers:
+
+Beschreibung:
+Eine Harshad-Zahl (oder Niven-Zahl) ist eine positive Ganzzahl, 
+die durch die Summe ihrer Ziffern teilbar ist.
+
+Mathematik:  
+Sei n eine positive Ganzzahl und s(n) die Summe der Ziffern von n.
+n ist eine Harshad-Zahl, wenn n  durch s(n) ohne Rest teilbar ist.
+
+Beispiel:
+Betrachten Sie die Zahl 18:
+Die Summe ihrer Ziffern ist 1 + 8 = 9.
+Da 18 durch 9 ohne Rest teilbar ist (18 ÷ 9 = 2), ist 18 eine Harshad-Zahl.
+Ein weiteres Beispiel ist die Zahl 20.
+Die Summe seiner Ziffern ist 2 + 0 = 2. Da 20 durch 2 ohne Rest teilbar ist
+20 ÷ 2 = 10 ist auch 20 eine Harshad-Zahl.
+---
+10:
+Narcissist Numbers:
+
+Beschreibung:
+Eine narzisstische Zahl ist eine Zahl, die gleich der Summe ihrer eigenen Ziffern,
+jede erhoben zur Potenz der Anzahl der Ziffern in der Zahl, ist.
+
+Mathematik:
+Eine n -stellige Zahl ist narzisstisch, wenn die Summe ihrer Ziffern,
+jede erhoben zur  n -ten Potenz, gleich der ursprünglichen Zahl ist.
+
+Mathematisch ausgedrückt, sei n eine d -stellige Zahl und (a_i) ihre Ziffern.
+n  ist narzisstisch, wenn:
+n = (a_1)^d + (a_2)^d + ...+ (a_d)^d
+
+Beispiel:
+Betrachten Sie die Zahl 153:
+Es ist eine 3-stellige Zahl. Die Summe ihrer Ziffern,
+jede erhoben zur dritten Potenz, ist:
+1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+
+Da diese Summe gleich der ursprünglichen Zahl 153 ist, ist 153 eine narzisstische
+Zahl. Ein weiteres Beispiel ist die Zahl 9474. Es ist eine 4-stellige Zahl, und:
+9^4 + 4^4 + 7^4 + 4^4 = 6561 + 256 + 2401 + 256 = 9474 
+Da diese Summe gleich 9474 ist, ist auch 9474 eine narzisstische Zahl.
+---
+11:
+Perfect Numbers:
+
+Beschreibung: 
+Eine perfekte Zahl ist eine positive Ganzzahl, die gleich der Summe ihrer echten Teiler 
+d.h. alle positiven Teiler außer sich selbst) ist.
+
+Mathematik: 
+Sei n eine positive Ganzzahl. Wenn die Summe der echten Teiler von n (einschließlich 
+1, aber nicht  n  selbst) genau n ergibt, dann ist n eine perfekte Zahl.
+
+Beispiel:
+Betrachten Sie die Zahl 28:
+Ihre echten Teiler sind 1, 2, 4, 7 und 14.
+Die Summe dieser Teiler ist 1 + 2 + 4 + 7 + 14 = 28.
+
+Da die Summe ihrer echten Teiler genau 28 ergibt, ist 28 eine perfekte Zahl.
+Ein weiteres bekanntes Beispiel für eine perfekte Zahl ist 6, 
+da die Teiler von 6 (außer 6 selbst) 1, 2 und 3 sind und ihre Summe 1 + 2 + 3 = 6 ergibt.
+---
+12:
+Prime Numbers:
+
+Beschreibung:
+Eine Primzahl ist eine natürliche Zahl größer als 1, 
+die keine positiven Teiler hat, außer 1 und sich selbst.
+
+Mathematik:  
+Eine Zahl n ist eine Primzahl, wenn sie nur durch 1 und n ohne Rest teilbar ist.
+Dies bedeutet, dass n keine echten Teiler hat (außer 1).
+
+Beispiel:
+Betrachten Sie die Zahl 5:
+Die einzigen Zahlen, durch die 5 ohne Rest teilbar ist, sind 1 und 5 selbst. 
+
+Das bedeutet, dass 5 eine Primzahl ist. 
+Es ist wichtig zu beachten, dass 2 die einzige gerade Primzahl ist.
+Alle anderen geraden Zahlen können durch 2 geteilt werden und sind daher keine Primzahlen.
+---
+13:
+Sexy Prime Numbers:
+
+Beschreibung:
+Ein Paar von Primzahlen wird als "Sexy Prime" bezeichnet, 
+wenn sie genau sechs Einheiten auseinander liegen.
+Der Begriff "sexy" stammt vom lateinischen Wort "sex", was sechs bedeutet.
+
+Mathematik:
+Wenn p und p+6 beide Primzahlen sind, dann bilden p und p+6 ein "Sexy Prime"-Paar.
+
+Beispiel:  
+Betrachten Sie die Zahlen 5 und 11:
+Beide sind Primzahlen und liegen genau 6 Einheiten auseinander. 
+
+Das bedeutet, dass (5, 11) ein "Sexy Prime"-Paar ist. 
+Ein weiteres Beispiel ist das Paar (7, 13).
+Beide Zahlen sind Primzahlen und liegen 6 Einheiten auseinander, wodurch sie ein weiteres
+"Sexy Prime"-Paar bilden.
+---
+14:
+Smith Numbers:
+
+Beschreibung:
+Eine Smith-Zahl ist eine zusammengesetzte Zahl (d.h. keine Primzahl), 
+für die die Summe ihrer Ziffern gleich der Summe der Ziffern ihrer Primfaktoren ist.
+Wobei die Primfaktoren als Zahlen, nicht als Produkte, gezählt werden.
+
+Mathematik: 
+Eine Zahl n ist eine Smith-Zahl, wenn:
+1. n ist Composite (nicht prim).
+2. Die Summe der Ziffern von n ist gleich der Summe der Ziffern aller ihrer Primfaktoren.
+
+Beispiel:
+Betrachten Sie die Zahl 22:
+Primfaktoren von 22 sind 2 und 11.  
+Summe der Ziffern von 22: 2 + 2 = 4 .  
+Summe der Ziffern der Primfaktoren: 2 + (1 + 1) = 4.  
+
+Da beide Summen identisch sind und 22 zusammengesetzt ist, ist 22 eine Smith-Zahl.
+---
+15:
+Square Numbers:
+
+Beschreibung:
+Eine quadratische Zahl ist das Ergebnis der Multiplikation einer Ganzzahl mit sich selbst.
+Das bedeutet, eine Zahl ist quadratisch, 
+wenn sie die Quadratfläche eines Quadrats mit einer ganzzahligen Seitenlänge darstellt.
+
+Mathematik: 
+Eine Zahl n ist eine quadratische Zahl, wenn es eine ganze Zahl x gibt, so dass n = x^2.
+
+Beispiel:  
+Betrachten Sie die Zahl 121:
+Da 11 * 11 = 121, ist 121 eine quadratische Zahl.
+---
+16:
+Triangle Numbers:
+
+Beschreibung:
+Eine dreieckige Zahl ist eine Zahl, die die Form eines gleichseitigen Dreiecks bildet,
+wenn sie als Punkte oder Gegenstände angeordnet ist.
+Sie repräsentiert die Anzahl der Punkte in einem Dreieck mit einer bestimmten Anzahl von Reihen.
+
+Mathematik:
+Die n -te dreieckige Zahl ist die Summe der ersten n natürlichen Zahlen.
+Die Formel zur Bestimmung der n -ten dreieckigen Zahl ist:
+T_n = n(n+1) /2
+
+Beispiel:
+Betrachten Sie n = 4:
+Die dreieckige Zahl ist T_4 = 4(4+1) / 2 = 4 * 5 / 2 = 10. 
+
+Wenn Sie 10 Punkte in der Form eines gleichseitigen Dreiecks anordnen.
+Mit 1 Punkt in der ersten Reihe, 2 in der zweiten, 3 in der dritten und 4 in der vierten,
+erhalten Sie insgesamt 10 Punkte.
+---
+17:
+Twin Prime Numbers:
+
+---
+18:
+Ugly Numbers:
+
+---
+19:
+Woodall Numbers:
+
+---
+20:
+Zuckerman Numbers:
+
+---
+21:
+Zumkeller Numbers:
+
+---
+22:
+Pronic Numbers:
+
+---
+23:
+Pell Numbers:
+
+---
+24:
+Catalan Numbers:
+
+---
+25:
+Disarium Numbers:
+
+---
+26:
+Sphenic Numbers:
+
